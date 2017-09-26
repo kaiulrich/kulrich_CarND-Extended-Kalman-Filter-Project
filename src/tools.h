@@ -1,11 +1,10 @@
-#ifndef TOOLS_H_
-#define TOOLS_H_
-#include <vector>
-#include "Eigen/Dense"
+#pragma once
 
-using Eigen::MatrixXd;
+#include <vector>
+using std::vector;
+#include "Eigen/Dense"
 using Eigen::VectorXd;
-using namespace std;
+using Eigen::MatrixXd;
 
 class Tools {
 public:
@@ -30,5 +29,3 @@ public:
   MatrixXd CalculateJacobian(const VectorXd& x_state);
 
 };
-
-#endif /* TOOLS_H_ */

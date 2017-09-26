@@ -1,6 +1,8 @@
-#ifndef KALMAN_FILTER_H_
-#define KALMAN_FILTER_H_
+#pragma once
+
 #include "Eigen/Dense"
+using Eigen::MatrixXd;
+using Eigen::VectorXd;
 
 class KalmanFilter {
 public:
@@ -63,7 +65,4 @@ public:
    * @param z The measurement at k+1
    */
   void UpdateEKF(const Eigen::VectorXd &z);
-
 };
-
-#endif /* KALMAN_FILTER_H_ */
