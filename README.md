@@ -96,8 +96,8 @@ Matlab scripts that can generate additional data.
 |  | Dataset 1                     | Dataset 2                 |
 |-----|---------------------------|---------------------------|
 | RMSE | px: 0.0964425, py: 0.0852905, vx: 0.415426, vy: 0.431636 | px: 0.0725678, py: 0.0964738, vx: 0.421634, vy: 0.493199 |
-| Track | [![E](https://img.youtube.com/vi/LqPwKTU3QyY/0.jpg)](https://youtu.be/LqPwKTU3QyY "Dataset 1")| [![E](https://img.youtube.com/vi/NxXlZ3zOjZs/0.jpg)](https://youtu.be/NxXlZ3zOjZs "Dataset 2") |
-| Analyse klick for details | [![E](data_1.png)](https://plot.ly/~kulrich/1.embed "Dataset 1") | [![E](data_2.png)](https://plot.ly/~kulrich/3.embed "Dataset 2") |
+| Track (klick to watch) | [![E](https://img.youtube.com/vi/LqPwKTU3QyY/0.jpg)](https://youtu.be/LqPwKTU3QyY "Dataset 1")| [![E](https://img.youtube.com/vi/NxXlZ3zOjZs/0.jpg)](https://youtu.be/NxXlZ3zOjZs "Dataset 2") |
+| Analyse (klick for details) | [![E](data_1.png)](https://plot.ly/~kulrich/1.embed "Dataset 1") | [![E](data_2.png)](https://plot.ly/~kulrich/3.embed "Dataset 2") |
 
 
 #### 3. My Sensor Fusion algorithm follows the general processing flow as taught in the preceding lessons.
