@@ -80,14 +80,32 @@ If you'd like to generate your own radar and lidar data, see the
 [utilities repo](https://github.com/udacity/CarND-Mercedes-SF-Utilities) for
 Matlab scripts that can generate additional data.
 
-## Project Instructions and Rubric
+## Rubrics Points
 
-Note: regardless of the changes you make, your project must be buildable using
-cmake and make!
+### 1. Your code should compile.. 
+* My code compiles without errors with `cmake` and `make`.
 
-More information is only accessible by people who are already enrolled in Term 2
-of CarND. If you are enrolled, see [the project resources page](https://classroom.udacity.com/nanodegrees/nd013/parts/40f38239-66b6-46ec-ae68-03afd8a601c8/modules/0949fca6-b379-42af-a919-ee50aa304e6a/lessons/f758c44c-5e40-4e01-93b5-1a82aa4e044f/concepts/382ebfd6-1d55-4487-84a5-b6a5a4ba1e47)
-for instructions and the project rubric.
+    + `cd cmake-build-production-output`
+    + run `cmake ../` and `make`.
+    + I didn't change `CMakeLists.txt` as everything was there from the begining
+    
+### 2. px, py, vx, vy output coordinates must have an RMSE <= [.11, .11, 0.52, 0.52] when using the file: "obj_pose-laser-radar-synthetic-input.txt which is the same data file the simulator uses for Dataset 1"
+* I ran my algorithm against two data sets. On Data set 1 I have recorded values and analyzed them using python script from `CarND-Mercedes-SF-Utilities`. There is a very powerfull tool to visalize the data [plot.ly](https://plot.ly). Feel free too test it.
+
+|  | Dataset 1                     | Dataset 2                 |
+|-----|---------------------------|---------------------------|
+| RMSE | px: 0.0964425, py: 0.0852905, vx: 0.415426, vy: 0.431636 | px: 0.0725678, py: 0.0964738, vx: 0.421634, vy: 0.493199 |
+| Track | [![E](https://img.youtube.com/vi/LqPwKTU3QyY/0.jpg)](https://youtu.be/LqPwKTU3QyY "Dataset 1")| [![E](https://img.youtube.com/vi/NxXlZ3zOjZs/0.jpg)](https://youtu.be/NxXlZ3zOjZs "Dataset 2") |
+| Analyse klick for details | [![E](data_1.png)](https://plot.ly/~kulrich/1.embed "Dataset 1") | [![E](data_2.png)](https://plot.ly/~kulrich/3.embed "Dataset 2") |
+
+
+### My Sensor Fusion algorithm follows the general processing flow as taught in the preceding lessons.
+### My Kalman Filter algorithm handles the first measurements appropriately.
+### Kalman Filter algorithm first predicts then updates.
+### Kalman Filter can handle radar and lidar measurements.
+### Code styling
+* I have replaced `if def` conditionals in header files with `pragma once` as it's more modern and ensures same behaviour and protects from similarly named namespaces in different header files.
+
 
 ## Hints and Tips!
 
@@ -123,4 +141,5 @@ still be compilable with cmake and make.
 
 ## How to write a README
 A well written README file can enhance your project and portfolio.  Develop your abilities to create professional README files by completing [this free course](https://www.udacity.com/course/writing-readmes--ud777).
+
 
